@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunil Kumar Pathi's Protfolio</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-dark text-white">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-0">
+  <div class="container-fluid">
+    <a class="navbar-brand ps-4 fs-4" href="#">Sunil Kumar Pathi</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarNav" aria-controls="navbarNav"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navbarNav">
+      <ul class="navbar-nav ms-auto pe-4">
+        <li class="nav-item fs-6"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item fs-6"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item fs-6"><a class="nav-link" href="#service">Services</a></li>
+        <li class="nav-item fs-6"><a class="nav-link" href="#project">Projects</a></li>
+        <li class="nav-item fs-6"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Home Section -->
+ <div class="bg-dark">
+ <div class="container" data-aos="fade-up" data-aos-offset="200">
+   <div class="row justify-content-center align-items-center text-center">
+    <div class="col-sm-12 col-md-6 col-lg-6 col-12 order-2 order-lg-1 my-3">
+        <div class="text-white">
+          <h1 class="text-center">Hello, I’m </h1>
+          <h1><span class="text-warning-emphasis"> Sunil Kumar Pathi</span></h1>
+          <h2 class="text-center text-white-50">I'm a <span id="changing-role">Full Stack Java Developer</span></h2> 
+          <p class="text-center text-info">MCA graduate and Java Full Stack Developer. 
+          I specialize in building web applications using Java, Spring Boot, Hibernate, MySQL, and modern front-end technologies. 
+          I am eager to learn, grow, and contribute to real-world software projects.</p>
+          <div class="text-center">
+          <a href="#contact" class="btn submit-btn mx-2 ">Hire me</a>
+          <a href="assets/SunilPathi_Resume.pdf" class="btn submit-btn" download>Download Resume</a>
+          
+          </div>
+        </div>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-6 col-12 order-1 order-lg-2 m-auto text-center" data-aos="fade-up" data-aos-offset="200">
+      <img src="retero-black.png" alt="" class="img-fluid w-75 imgsuni">
+    </div>
+   </div>
+ </div>
+</div>
+ <!-- About Section -->
+
+<div id="about" class="my-4 text-center" data-aos="fade-up" data-aos-offset="200">
+  <div class="d-inline-block px-4 py-2 rounded-pill bg-dark shadow">
+    <h2 class="m-0 text-white fw-bold">
+      About <span class="text-success">Me</span>
+    </h2>
+  </div>
+</div>
+
+ <div class="container my-5 why-hire-section" data-aos="zoom-in-right" data-aos-offset="200">
+  <div class="row g-4">
+
+    <!-- LEFT SIDE -->
+    <div class="col-md-4">
+      <h2 class="text-white fw-bold">Why Hire Me?</h2>
+      <p class="text-success">
+        Passionate MCA graduate with strong foundations in Java Full Stack Development.
+      </p>
+
+      <button class="menu-btn active" onclick="loadEdu()">Education</button>
+      <button class="menu-btn" onclick="loadSkills()">Skills</button>
+      <button class="menu-btn" onclick="loadCertifications()">Certifications</button> 
+      <button class="menu-btn" onclick="loadAbout()">About Me</button>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="col-md-8" data-aos="zoom-in-left" data-aos-offset="200">
+      <h2 class="text-white fw-bold mb-3" id="sectionTitle">
+        My <span class="text-success">Experience</span>
+      </h2>
+
+      <div id="rightScroll">
+        <div id="ref" class="row g-4"></div>
+        
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Services -->
+<div id="service" class="container" >
+
+  <div class="my-4 text-center" data-aos="fade-up" data-aos-offset="200">
+    <div class="d-inline-block px-4 py-2 rounded-pill bg-dark shadow">
+      <h2 class="m-0 text-white fw-bold">
+        My <span class="text-success">Services</span>
+      </h2>
+    </div>
+  </div>
+
+  <div class="row justify-content-center align-items-stretch">
+
+    <div class="col-md-4 my-3 d-flex" data-aos="fade-up" data-aos-offset="200">
+      <div class="card service-card w-100">
+        <div class="card-body text-white d-flex flex-column">
+          <i class="bi bi-code-slash service-icon"></i>
+          <h3 class="card-title mt-2">Web Development</h3>
+          <p class="card-text">
+            Experienced in building responsive web applications using modern front-end technologies with a strong focus on performance, usability, and clean architecture.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 my-3 d-flex" data-aos="fade-up" data-aos-offset="200">
+      <div class="card service-card w-100">
+        <div class="card-body text-white d-flex flex-column">
+          <i class="bi bi-layers service-icon"></i>
+          <h3 class="card-title mt-2">Full-Stack Java Projects</h3>
+          <p class="card-text">
+            I design and develop real-world full-stack Java applications, helping students and professionals create customized projects with clean code, scalable architecture, and practical functionality.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 my-3 d-flex" data-aos="fade-up" data-aos-offset="200">
+      <div class="card service-card w-100">
+        <div class="card-body text-white d-flex flex-column">
+          <i class="bi bi-file-earmark-text service-icon"></i>
+          <h4 class="card-title mt-2">Technical Documentation & Presentations</h4>
+          <p class="card-text">
+            I develop professional resumes and project documentation that effectively present skills, experience, and technical work in a structured manner.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- projects -->
+ <section id="project" class="projects-section py-5">
+  <div class="container">
+
+  <div class="my-4 text-center" data-aos="fade-up" data-aos-offset="200">
+  <div class="d-inline-block px-4 py-2 rounded-pill bg-dark shadow">
+    <h2 class="m-0 text-white fw-bold">
+      My <span class="text-success">Projects</span>
+    </h2>
+  </div>
+</div>
+
+    <div class="project-slider" >
+
+      <!-- Project 1 -->
+      <div class="project-slide active" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-white">
+            <h1 class="project-no">01</h1>
+            <h3>Java Full Stack Project</h3>
+            <p>
+             HungryHub is a full-stack restaurant management system built with Java, Spring Boot, Hibernate, and MySQL to manage customers, orders, and inventory efficiently. It features RESTful APIs, role-based security with Spring Security, and dynamic UI using Thymeleaf.
+            </p>
+            <p class="tech">Java, Spring Boot, Hibernate, MySQL </p>
+            <a href="https://github.com/sunilpathi/HungryHubRestaurantApp" target="_blank" class="btn submit-btn">View Project</a>
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="assets/springbootproject.png" class="img-fluid project-img">
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-slide">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-white">
+            <h1 class="project-no">02</h1>
+            <h3>React Car Rental Web Application</h3>
+            <p>
+              A modern car rental platform that lets users browse vehicles, book rentals with dynamic pricing, and generate invoices while tracking booking history. It simulates a real-world rental workflow using client-side storage and a fully responsive interface.
+            </p>
+            <p class="tech">React.js, JavaScript, Bootstrap 5, React Router, Local Storage, Vite</p>
+            <a href="https://sunilpathi.github.io/CarRentals/" target="_blank" class="btn submit-btn">View Project</a>
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="assets/CarRentalspic.jpg" class="img-fluid project-img">
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-slide">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-white">
+            <h1 class="project-no">03</h1>
+            <h3>Bootstrap – Fireworks Website </h3>
+            <p>
+              CrackerClass is a festive-themed fireworks e-commerce website that blends tradition with modern web technology. It showcases selected products and cultural storytelling through a clean, responsive interface. The project highlights branding and interactive front-end design.
+            </p>
+            <p class="tech">HTML5, CSS3, Bootstrap5</p>
+            <a href="https://sunilpathi.github.io/FireWorksWebsite/" target="_blank" class="btn submit-btn">View Project</a>
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="assets/CrackersWebsite.jpeg" class="img-fluid project-img">
+          </div>
+        </div>
+      </div>
+
+       <!-- Project 4 -->
+      <div class="project-slide">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-white">
+            <h1 class="project-no">04</h1>
+            <h3>E-Commerce Website with Gaming Feature</h3>
+            <p>
+             An interactive e-commerce website with a built-in gaming feature, combining shopping and entertainment in a single responsive platform built with HTML, CSS, and JavaScript.
+            </p>
+            <p class="tech">HTML5, CSS3, JavaScript</p>
+            <a href="https://sunilpathi.github.io/E-commerce/" target="_blank"  class="btn submit-btn">View Project</a>
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="assets/E-commercepic.jpg" class="img-fluid project-img">
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="project-slide">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-white">
+            <h1 class="project-no">05</h1>
+            <h3>Java Full Stack Web Application</h3>
+            <p>
+              An online doctor appointment system that enables remote consultations through a secure, user-friendly web platform. It automates booking, report uploads, and digital prescriptions to replace manual clinic processes. Built with Java and MySQL, it highlights efficient and secure healthcare management.
+            </p>
+            <p class="tech">Java, JSP, Servlets, MySQL </p>
+            <a href="https://github.com/sunilpathi/DoctorAppointment" target="_blank" class="btn submit-btn">View Project</a>
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="assets/doctorpic.png" class="img-fluid project-img">
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="project-slide">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-white">
+            <h1 class="project-no">06</h1>
+            <h3>Redbus Website</h3>
+            <p>
+              I recreated a redBus-inspired desktop travel booking website using only HTML and CSS as a UI challenge. It showcases strong layout skills and the ability to replicate a professional commercial interface using pure front-end fundamentals.
+            </p>
+            <p class="tech">HTML5, CSS3</p>
+            <a href="https://sunilpathi.github.io/RedbusforPractisenotReal/" target="_blank" class="btn submit-btn">View Project</a>
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="assets/redbusWebsitepic.jpeg" class="img-fluid project-img">
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Buttons -->
+      <div class="project-nav">
+        <button id="prevBtn">&#8592;</button>
+        <button id="nextBtn">&#8594;</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Contact -->
+
+<div id="contact" class="my-4 text-center" data-aos="fade-up" data-aos-offset="200">
+  <div class="d-inline-block px-4 py-2 rounded-pill bg-dark shadow">
+    <h2 class="m-0 text-white fw-bold">
+      Contact <span class="text-success">Me</span>
+    </h2>
+  </div>
+</div>
+
+ <section class="contact-section py-5">
+  <div class="container" >
+    <div class="row align-items-center">
+
+      <div class="col-lg-5 col-md-12 mb-4" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+
+  <div class="contact-item">
+    <a href="https://www.google.com/maps/place/Bachupally,+Hyderabad,+Telangana" target="_blank" class="icon">
+      <i class="bi bi-geo-alt-fill"></i>
+    </a>
+    <div>
+      <h5>Address</h5>
+      <p>Bachupally, Hyderabad, Telangana</p>
+    </div>
+  </div>
+
+  <div class="contact-item">
+    <a href="mailto:sunilpathi82@gmail.com" class="icon">
+      <i class="bi bi-envelope-fill"></i>
+    </a>
+    <div>
+      <h5>Email</h5>
+      <p>sunilpathi82@gmail.com</p>
+    </div>
+  </div>
+
+  <div class="contact-item">
+    <a href="tel:+917989738066" class="icon">
+      <i class="bi bi-telephone-fill"></i>
+    </a>
+    <div>
+      <h5>Phone</h5>
+      <p>8187080117</p>
+    </div>
+  </div>
+
+  <div class="contact-item">
+    <a href="https://www.linkedin.com/in/sunil-kumar-pathi-674a5a288/" target="_blank" class="icon">
+      <i class="bi bi-linkedin"></i>
+    </a>
+    <div>
+      <h5>LinkedIn</h5>
+      <p>Sunil Kumar Pathi</p>
+    </div>
+  </div>
+
+</div>
+
+
+      
+      <div class="col-lg-7 col-md-12" data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="500">
+  <form class="contact-form"
+        action="https://api.web3forms.com/submit"
+        method="POST">
+
+    
+    <input type="hidden" name="access_key" value="d3e053c3-6fab-42e4-813b-07450a4508e9">
+
+    <!-- Email subject -->
+    <!-- <input type="hidden" name="_subject" value="New Contact Message from Portfolio"> -->
+
+    <!-- Success redirect (optional) -->
+    <!-- <input type="hidden" name="_next" value="https://yourdomain.com/thankyou.html"> -->
+
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+      </div>
+
+      <div class="col-md-6 mb-3">
+        <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+      </div>
+
+      <div class="col-md-6 mb-3">
+        <input type="text" name="phone" class="form-control" placeholder="Your Phone">
+      </div>
+
+      <div class="col-md-6 mb-3">
+        <input type="text" name="subject" class="form-control" placeholder="Subject">
+      </div>
+
+      <div class="col-12 mb-4">
+        <textarea name="message" rows="5" class="form-control"
+                  placeholder="Write your message here..." required></textarea>
+      </div>
+
+      <div class="col-12">
+        <button type="submit" class="btn submit-btn">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+    AOS.init();
+   </script>
+</body>
+</html>
